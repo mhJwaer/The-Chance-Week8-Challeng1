@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">The Chance Week8 Challenge1</string>
+    <string name="split_now">Split Now</string>
+    <string name="receipt">Receipt</string>
+    <string name="title">Title</string>
+    <string name="team_dinner">Team Dinner</string>
+    <string name="total_bill">Total Bill</string>
+    <string name="_750_86">$750.86</string>
+    <string name="splitting_with">Splitting with</string>
+    <string name="me">Me</string>
+    <string name="_200_86">$200.86</string>
+    <string name="cody">Cody</string>
+    <string name="_450">$450</string>
+    <string name="_100">$100</string>
+    <string name="sarah">Sarah</string>
+    <string name="confirm_split">Confirm Split</string>
+</resources>
