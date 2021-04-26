@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     tools:context=".MainActivity"
-    tools:ignore="ContentDescription">
+    tools:ignore="ContentDescription"
+    >
 
 
     <ImageView
@@ -339,26 +340,28 @@
         app:layout_constraintTop_toBottomOf="@+id/animoji_thump1_main3" />
 
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.constraintlayout.motion.widget.MotionLayout
         android:id="@+id/cons"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="78dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/low_layout_background"
         android:elevation="16dp"
+        app:layoutDescription="@xml/activity_main_scene"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/seekBar3">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/button12"
             android:layout_width="wrap_content"
             android:layout_height="56dp"
-            android:layout_margin="12dp"
+            android:layout_marginStart="16dp"
             android:background="@drawable/low_button_shape"
             android:elevation="16dp"
+            android:clickable="false"
             android:text="@string/confirm_split"
             android:textAllCaps="false"
             android:textColor="@color/split_text_color"
@@ -380,13 +383,13 @@
             android:scaleY="1.5"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/button"
+            app:layout_constraintStart_toEndOf="@+id/button12"
             app:layout_constraintTop_toTopOf="parent"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
             app:lottie_rawRes="@raw/arrow" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.motion.widget.MotionLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
